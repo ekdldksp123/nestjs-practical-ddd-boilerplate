@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { QueryHandlers } from './queries';
 import { CqrsModule } from '@nestjs/cqrs';
 import { ReservationController } from './reservation.controller';
-import { CommandHandlers } from './commands';
+import { CommandHandlers } from './shared/commands';
 import { IdGenerator } from '@vendit-dev/interface';
 import { UuidGenerator } from '@vendit-dev/libs';
 import { ReservationRepositoryMemoryAdapter } from './repository/memory/reservation-repository-memory.adapter';

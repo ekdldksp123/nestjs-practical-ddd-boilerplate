@@ -8,13 +8,13 @@ import {
   Delete,
 } from '@nestjs/common';
 import { CommandBus, QueryBus } from '@nestjs/cqrs';
-import { CreateReservationDto } from './dto/create-reservation.dto';
-import { CreateReservationCommand } from './commands/create-reservation/create-reservation.command';
-import { ListReservationQuery } from './queries/list-reservation/list-reservation.query';
-import { GetReservationQuery } from './queries/get-reservation/get-reservation.query';
-import { UpdateReservationDto } from './dto/update-reservation.dto';
-import { UpdateReservationCommand } from './commands/update-reservation/update-reservation.command';
-import { DeleteReservationCommand } from './commands/delete-reservation/delete-reservation.command';
+import { CreateReservationCommand } from '../shared/commands/create-reservation/create-reservation.command';
+import { UpdateReservationCommand } from '../shared/commands/update-reservation/update-reservation.command';
+import { DeleteReservationCommand } from '../shared/commands/delete-reservation/delete-reservation.command';
+import { CreateReservationDto } from '../shared/dto/create-reservation.dto';
+import { ListReservationQuery } from '../shared/queries/list-reservation/list-reservation.query';
+import { GetReservationQuery } from '../shared/queries/get-reservation/get-reservation.query';
+import { UpdateReservationDto } from '../shared/dto/update-reservation.dto';
 
 @Controller('reservation')
 export class ReservationController {

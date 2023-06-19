@@ -1,7 +1,7 @@
-import { ReservationRepository } from '../reservation-repository';
-import { Reservation } from '../../entities/reservation.entity';
 import { CreateReservationDto } from '../../dto/create-reservation.dto';
 import { UpdateReservationDto } from '../../dto/update-reservation.dto';
+import { Reservation } from '../../entities/reservation.entity';
+import { ReservationRepository } from '../reservation-repository';
 
 export class ReservationRepositoryMemoryAdapter extends ReservationRepository {
   private reservations; //주입 필요
